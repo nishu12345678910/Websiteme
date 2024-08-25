@@ -1,0 +1,209 @@
+/* Wrapper for the index/home page*/
+#wrapper {
+    display: grid; /* Use CSS Grid for layout */
+    background-color: #3aafA3; /* Background color for the wrapper */
+    grid-template-areas: /* Define grid areas for layout */
+        "header header header header header"
+        "nav nav nav nav nav"
+        "image1 image1 image2 image2 image2"
+        "main main main main main"
+        "footer footer footer footer logo";
+}
+
+/* Header section */
+#header {
+    font-size: 40px; /* Font size for the header text */
+    grid-area: header; /* Assign this element to the header grid area */
+    background-color: #2b7a78; /* Background color for the header */
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    height: 150px; /* Fixed height for the header */
+}
+
+/* Logo section in the footer */
+#logo {
+    grid-area: logo; /* Assign this element to the logo grid area */
+    padding: 20px; /* Padding inside the logo section */
+    text-align: center; /* Center align the text */
+    background-color: #333; /* Background color for the logo section */
+}
+
+/* Main content area */
+#main {
+    grid-area: main; /* Assign this element to the main grid area */
+    border-radius: 50px; /* Rounded corners */
+    height: 100px; /* Fixed height for the main content area */
+    margin: 20px; /* Margin outside the main content area */
+    padding: 20px; /* Padding inside the main content area */
+    background-color: #def2f1; /* Background color for the main content area */
+}
+
+/* Navigation section */
+.nav {
+    grid-area: nav; /* Assign this element to the nav grid area */
+    background-color: #2b7a78; /* Background color for the navigation */
+}
+
+/* Navigation list styling */
+.nav ul {
+    list-style-type: none; /* Remove bulletpoints */
+    display: flex; /* Display list items in a row */
+}
+
+/* Navigation list item styling */
+.nav li {
+    margin-right: 20px; /* Space between list items */
+    margin-bottom: 20px; /* Space below list items */
+}
+
+/* Navigation link styling */
+.nav a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Padding inside links */
+    background-color: #3aafA3; /* Background color for links */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid black; /* Border around links */
+}
+
+/* Navigation link hover effect */
+.nav a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Image 1 section */
+#image1 {
+    grid-area: image1; /* Assign this element to the image1 grid area */
+    border-radius: 50px; /* Rounded corners */
+    height: 250px; /* Fixed height for the image1 section */
+    width: 300px; /* Fixed width for the image1 section */
+    margin: 20px; /* Margin outside the image1 section */
+    padding: 20px; /* Padding inside the image1 section */
+    background-color: #def2f1; /* Background color for the image1 section */
+}
+
+/* Image 2 section */
+#image2 {
+    grid-area: image2; /* Assign this element to the image2 grid area */
+    text-align: center; /* Center align the text */
+    padding: 30px; /* Padding inside the image2 section */
+    width: 500px; /* Fixed width for the image2 section */
+}
+
+/* Footer section */
+#footer {
+    grid-area: footer; /* Assign this element to the footer grid area */
+    font-size: 20px; /* Font size for the footer text */
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align the text */
+    padding: 30px; /* Padding inside the footer */
+}
+
+/* Image 1 inside another section */
+#img1 {
+    border-radius: 50px; /* Rounded corners for the image */
+}
+
+/* Button 1 styling */
+#button1 {
+    padding: 50px; /* Padding inside the button */
+}
+
+/* Wrapper for the contact me page*/
+#wrapper2 {
+    display: grid; /* Use CSS Grid for layout */
+    background-color: #3aafA3; /* Background color for the wrapper */
+    grid-template-areas: /* Define grid areas for layout */
+        "header header header header" 
+        "nav nav nav nav"
+        "main2 main2 main2 main2"
+        "main3 main3 main3 main3" 
+        "text1 text1 text2 text2"
+        "image3 image3 image4 image4"
+        "footer footer footer logo";
+}
+
+/* Main2 section */
+#main2 {
+    grid-area: main2; /* Assign this element to the main2 grid area */
+    text-align: center; /* Center align the text */
+    font-size: large; /* Large font size */
+    border-radius: 50px; /* Rounded corners */
+    height: 120px; /* Fixed height for the main2 section */
+    width: 500px; /* Fixed width for the main2 section */
+    margin: 20px; /* Margin outside the main2 section */
+    margin-left: 450px; /* Left margin for alignment */
+    padding: 20px; /* Padding inside the main2 section */
+    background-color: #def2f1; /* Background color for the main2 section */
+}
+
+/* Main3 section */
+#main3 {
+    grid-area: main3; /* Assign this element to the main3 grid area */
+    border-radius: 50px; /* Rounded corners */
+    height: 170px; /* Fixed height for the main3 section */
+    width: 500px; /* Fixed width for the main3 section */
+    margin: 20px; /* Margin outside the main3 section */
+    margin-left: 450px; /* Left margin for alignment */
+    padding: 20px; /* Padding inside the main3 section */
+    background-color: #def2f1; /* Background color for the main3 section */
+}
+
+/* Text1 section */
+#text1 {
+    grid-area: text1; /* Assign this element to the text1 grid area */
+    text-align: center; /* Center align the text */
+    font-size: 45px; /* Font size 45 pixels */
+    border-radius: 50px; /* Rounded corners */
+    height: 100px; /* Fixed height for the text1 section */
+    margin: 20px; /* Margin outside the text1 section */
+    padding: 20px; /* Padding inside the text1 section */
+    background-color: #def2f1; /* Background color for the text1 section */
+}
+
+/* Text2 section */
+#text2 {
+    grid-area: text2; /* Assign this element to the text2 grid area */
+    text-align: center; /* Center align the text */
+    font-size: 50px; /* Font size 50 pixels */
+    border-radius: 50px; /* Rounded corners */
+    height: 100px; /* Fixed height for the text2 section */
+    margin: 20px; /* Margin outside the text2 section */
+    padding: 20px; /* Padding inside the text2 section */
+    background-color: #def2f1; /* Background color for the text2 section */
+}
+
+/* Image3 section */
+#image3 {
+    grid-area: image3; /* Assign this element to the image3 grid area */
+}
+
+/* Image4 section */
+#image4 {
+    grid-area: image4; /* Assign this element to the image4 grid area */
+}
+
+/* Class for images with rounded corners */
+.img2 {
+    border-radius: 50px; /* Rounded corners */
+}
+
+/* Class for user styling */
+.user {
+    font-size: 50px; /* Font size for user text */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items to the center vertically */
+}
+
+/* Class for images with larger rounded corners */
+.img3 {
+    border-radius: 200px; /* Larger rounded corners */
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    margin: 20px; /* Margin outside the image */
+    margin-left: 230px; /* Left margin for alignment */
+    padding: 20px; /* Padding inside the image */
+    background-color: #def2f1; /* Background color for the image */
+    border-radius: 200px; /* Rounded corners */
+}
